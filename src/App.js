@@ -19,12 +19,10 @@ function App() {
           </nav>
         </header>
 
-          <Route exact path="/products" component={Products} />
-          <Route exact path="/cart" component={ViewCart} />
-          <Route exact path="/checkout" component={Checkout} />
-          <Route exact path="/" component={Home} />
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+        <Route path="/products" component={Products} />
+        <Route exact path="/cart" component={ViewCart} />
+        <Route exact path="/checkout" component={Checkout} />
+        <Route exact path="/" component={Home} />
 
       </div>
     </Router>
